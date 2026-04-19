@@ -245,6 +245,7 @@
       min-height: 260px;
     }
 
+    /* Sigil Styles */
     .faction-sigils {
       display: flex;
       flex-wrap: wrap;
@@ -254,29 +255,16 @@
     }
 
     .faction-sigils img {
-      width: 130px;
-      height: 130px;
+      width: 135px;
+      height: 135px;
       display: block;
     }
 
-    .ph-sigil {
-      aspect-ratio: 1 / 1;
-      padding: 10px;
-      margin: 0;
-      min-height: 0;
-    }
-
-    .ph-sigil .ph-label {
-      font-size: 0.85em;
-    }
-
-    .ph-sigil .ph-dims {
-      font-size: 0.6em;
-    }
-
-    .ph-creator {
-      min-height: 200px;
-      max-width: 220px;
+    /* Creator Photo Styles */
+    .creator-photo {
+      width: 400px;
+      height: 400px;
+      display: block;
       margin: 14px auto;
     }
   </style>
@@ -364,11 +352,8 @@
       <h2 class="section-label">The Creator</h2>
       <div class="section-content">
 
-        <div class="img-placeholder ph-creator">
-          <div class="ph-label">[ PLACEHOLDER FOR CREATOR PHOTO ]</div>
-          <div class="ph-desc">Headshot or artist portrait</div>
-          <div class="ph-dims">Suggested: ~400×400 px (square)</div>
-        </div>
+        <!-- ========== CREATOR PHOTO ========== -->
+        <img src="images/zacharyhutchinson.png" alt="Zachary Hutchinson" class="creator-photo">
 
         <p><strong>Zachary Hutchinson</strong> (she/her, b. 1991, Grand Rapids, MI) is a Chicago-based artist and educator whose interdisciplinary practice spans video, sculpture, performance, and comics. She holds a BFA in Studio Art from the School of the Art Institute of Chicago and an MFA in Moving Image from the University of Illinois Chicago, and she currently teaches at both.</p>
  
