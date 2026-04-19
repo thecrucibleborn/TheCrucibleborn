@@ -4,6 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Crucibleborn</title>
+
+  <!-- ========== SEO / SEARCH DESCRIPTION ==========
+       Shown in Google search results under the page title.
+       Keep under ~160 characters.
+  -->
+  <meta name="description" content="The Crucibleborn — a fantasy adventure comic series by Zachary Hutchinson. Currently in development. First chapter in print May 2026.">
+
+  <!-- ========== OPEN GRAPH TAGS (link previews) ==========
+       Controls how the site appears when shared on Instagram,
+       Facebook, Discord, iMessage, Bluesky, LinkedIn, etc.
+       UPDATE the og:url if your final domain differs.
+       REPLACE og:image path once you have a preview image.
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thecrucibleborn.com/">
+  <meta property="og:title" content="The Crucibleborn">
+  <meta property="og:description" content="A fantasy adventure comic series by Zachary Hutchinson. Currently in development.">
+  <meta property="og:image" content="https://thecrucibleborn.com/images/og-preview.jpg">
+  <!-- og:image should be 1200 × 630 px for best results across platforms -->
+
+  <!-- ========== TWITTER / X CARD ========== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Crucibleborn">
+  <meta name="twitter:description" content="A fantasy adventure comic series by Zachary Hutchinson. Currently in development.">
+  <meta name="twitter:image" content="https://thecrucibleborn.com/images/og-preview.jpg">
+
+  <!-- ========== FAVICON ==========
+       The tiny icon that shows in browser tabs and bookmarks.
+       Upload a favicon.ico (or favicon.png) to your site root.
+       Recommended: 32×32 or 48×48 px, square. Can be a simple
+       symbol (✦ sigil, single letter, etc.) — doesn't need to
+       be elaborate at that size.
+  -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- apple-touch-icon: 180×180 px, used when someone saves site to iPhone home screen -->
+
   <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
   <style>
     * {
@@ -97,12 +134,14 @@
     }
 
     a {
-      color: #8B0000;
+      color: #888888;
+      background-color: #ffffff;
       text-decoration: underline;
     }
 
     a:visited {
-      color: #888888;
+      color: #ffffff;
+      background-color: #888888;
     }
 
     a:hover {
@@ -122,7 +161,7 @@
     }
 
     .socials-list li::before {
-      content: "► ";
+      content: "✧ ";
     }
 
     .footer-block {
@@ -183,12 +222,88 @@
       border-top: 1px dashed #111;
       margin: 10px 0;
     }
+
+    /* ============================================
+       IMAGE PLACEHOLDER STYLES
+       Replace these <div> placeholders with <img> tags
+       when artwork is ready. Each placeholder is labeled
+       with its intended content and suggested dimensions.
+       ============================================ */
+
+    .img-placeholder {
+      border: 2px dashed #111;
+      background-color: #99FFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      color: #111;
+      padding: 20px;
+      margin: 14px 0;
+    }
+
+    .img-placeholder .ph-label {
+      font-family: "Almendra Display", serif;
+      font-size: 1em;
+      margin-bottom: 6px;
+      letter-spacing: 0.05em;
+    }
+
+    .img-placeholder .ph-desc {
+      font-size: 0.8em;
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+
+    .img-placeholder .ph-dims {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+    }
+
+    /* Teaser image — large, wide */
+    .ph-teaser {
+      min-height: 260px;
+    }
+
+    /* Faction sigils — 4 in a row */
+    .faction-sigils {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin: 14px 0;
+    }
+
+    .ph-sigil {
+      aspect-ratio: 1 / 1;
+      padding: 10px;
+      margin: 0;
+      min-height: 0;
+    }
+
+    .ph-sigil .ph-label {
+      font-size: 0.85em;
+    }
+
+    .ph-sigil .ph-dims {
+      font-size: 0.6em;
+    }
+
+    /* Creator portrait — square-ish */
+    .ph-creator {
+      min-height: 200px;
+      max-width: 220px;
+      margin: 14px auto;
+    }
   </style>
 </head>
 <body>
   <div class="container">
 
-    <div class="header-flair">✦ ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙ ✦ ·͙*̩̩̥͙˚̩̥̩̥*̩̩̥͙·͙ ✦ *̩̩̥͙˚̩̥̩̥*̩̩͙·͙ ✦</div>
+    <div class="header-flair">· ✧ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ✧ ·</div>
 
     <div class="site-header">
       <h1>The Crucibleborn</h1>
@@ -196,14 +311,51 @@
       <p class="coming-soon">✦ ·͙*̩̩̥͙˚̩̥̩̥✦ Comic currently in development ✦˚̩̥̩̥*̩̩̥͙·͙ ✦</p>
     </div>
 
-    <div class="divider">✧･ﾟ: *✧･ﾟ:*　　*:･ﾟ✧*:･ﾟ✧</div>
+    <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
     <div class="section-block">
       <span class="section-label">The Story</span>
       <div class="section-content">
+
+        <p style="font-style: italic; text-align: center; font-size: 0.95em; margin-bottom: 16px; padding: 0 4px;">In a world where people are strictly segregated by their special abilities, a sheltered sky-nun, forced to the ground for the first time in her life, must learn to walk across a hostile wasteland to save her hybrid infant from a military scientist determined to dissect it and a calculating exile determined to use it to rewrite history.</p>
+
+        <!-- ========== TEASER IMAGE PLACEHOLDER ==========
+             Replace this <div> with: <img src="images/teaser.jpg" alt="The Crucibleborn teaser art" style="width:100%; display:block;">
+        -->
+        <div class="img-placeholder ph-teaser">
+          <div class="ph-label">[ PLACE HOLDER FOR TEASER IMAGE ]</div>
+          <div class="ph-desc"> Some Key art or hero illustration</div>
+          <div class="ph-dims">Suggested: ~600 × 400 px (landscape) or wider</div>
+        </div>
+        <!-- ========== END TEASER IMAGE ========== -->
+
         <p>The world is divided by blood and ability.</p>
 
 <p><strong>THE LOAM</strong> live simple lives, yet grow life from the dust. <strong>THE AERETH</strong> float above the world with disdain. <strong>THE IGNATTI</strong> forge civilizations of steel and steam. <strong>THE BRAKKEN</strong> colonize with their command of weather and water.</p>
+
+        <!-- ========== FACTION SIGILS PLACEHOLDERS ==========
+             Four small square icons/sigils, one per faction.
+             Replace each <div> with: <img src="images/sigil-loam.png" alt="Loam sigil" style="width:100%; display:block;">
+        -->
+        <div class="faction-sigils">
+          <div class="img-placeholder ph-sigil">
+            <div class="ph-label"> [ PLACE HOLDER FOR LOAM SIGIL ]</div>
+            <div class="ph-dims">~200×200 px</div>
+          </div>
+          <div class="img-placeholder ph-sigil">
+            <div class="ph-label">[ PLACE HOLDER FOR AERETH SIGIL ]</div>
+            <div class="ph-dims">~200×200 px</div>
+          </div>
+          <div class="img-placeholder ph-sigil">
+            <div class="ph-label">[ PLACE HOLDER FOR IGNATTI SIGIL ]</div>
+            <div class="ph-dims">~200×200 px</div>
+          </div>
+          <div class="img-placeholder ph-sigil">
+            <div class="ph-label">[ PLACE HOLDER FOR BRAKKEN SIGIL ]</div>
+            <div class="ph-dims">~200×200 px</div>
+          </div>
+        </div>
+        <!-- ========== END FACTION SIGILS ========== -->
 
 <p>For centuries, these four factions have kept their distance, maintained their borders, and enforced a strict separation of powers. They have also kept a secret.</p>
 
@@ -222,17 +374,43 @@
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
     <div class="section-block">
-      <span class="section-label"> Development Status</span>
+      <span class="section-label">Development Status</span>
       <div class="section-content">
-        <p>The comic is currently in development. The first volume of the story has been fully outlined. Volume one will be 18 chapters and roughly 250+ pages. Write now I am writing out dialogue sketching out pages. The first chapter will be avaible in print by mid May. Sign up for the newsletter below for more info! </p>
+        <p>The comic is currently in development. The first volume of the story has been fully outlined. Volume one will be 18 chapters and roughly 250+ pages. Right now I am writing out dialogue and sketching out pages. The first chapter will be available in print by late May 2026. Sign up for the newsletter below for more info! </p>
       </div>
     </div>
 
        <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
     <div class="section-block">
-      <span class="section-label"> The Creator</span>
+      <span class="section-label">Where to Get It</span>
       <div class="section-content">
+        <p>When the first chapter releases in late May 2026, you'll find <em>The Crucibleborn</em> at these Chicago shops:</p>
+        <ul class="socials-list">
+          <li><a href="https://www.quimbys.com/" target="_blank" rel="noopener noreferrer">Quimby's Bookstore</a> &mdash; Wicker Park</li>
+          <li><a href="https://www.grahamcrackers.com/store/chicago-loop" target="_blank" rel="noopener noreferrer">Graham Crackers Comics</a> &mdash; Chicago Loop</li>
+        </ul>
+        <p>Issues are <strong>$10 each</strong>, printed by hand in small runs. Limited edition variants of each chapter will also be available.</p>
+        <p><em>Outside Chicago?</em> Shipping is limited &mdash; email <a href="mailto:TheCrucibleborn@gmail.com">TheCrucibleborn@gmail.com</a> to ask.</p>
+        <p>For the quickest updates, follow along on <a href="https://www.instagram.com/TheCrucibleborn" target="_blank" rel="noopener noreferrer">Instagram</a>. To be notified when each chapter releases, sign up for the mailing list below.</p>
+      </div>
+    </div>
+
+       <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
+
+    <div class="section-block">
+      <span class="section-label">The Creator</span>
+      <div class="section-content">
+
+        <!-- ========== CREATOR PORTRAIT PLACEHOLDER ==========
+             Replace this <div> with: <img src="images/creator.jpg" alt="Zachary Hutchinson" style="display:block; max-width:220px; margin:14px auto;">
+        -->
+        <div class="img-placeholder ph-creator">
+          <div class="ph-label">[ PLACEHOLDER FOR CREATOR PHOTO ]</div>
+          <div class="ph-desc">Headshot or artist portrait</div>
+          <div class="ph-dims">Suggested: ~400×400 px (square)</div>
+        </div>
+        <!-- ========== END CREATOR PORTRAIT ========== -->
 
 <p>Zachary Hutchinson (she/her, b. 1991, Grand Rapids, MI) is a Chicago-based artist and educator whose interdisciplinary practice spans video, sculpture, performance, and comics. She holds a BFA in Studio Art from the School of the Art Institute of Chicago and an MFA in Moving Image from the University of Illinois Chicago, and she currently teaches at both.</p>
  
@@ -240,7 +418,7 @@
  
 <p>She lives in Chicago with her three cats, Mary, Nancy (aka Tutu), and Chacha. When not drawing, writing, or teaching, she can usually be found thrifting or sniffing perfume.</p>
  
-<p><em>zacharyhutchinson.com</em> ✧ ✦ ✧ Follow her on <a href="https://www.instagram.com/zacharyhutchinson/" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>      </div>
+<p>Website &mdash; <a href="https://www.zacharyhutchinson.com" target="_blank" rel="noopener noreferrer">www.ZacharyHutchinson.com</a> ✧ ✦ ✧ Instagram &mdash; <a href="https://www.instagram.com/zacharyhutchinson/" target="_blank" rel="noopener noreferrer">@ZacharyHutchinson</a></p>      </div>
     </div>
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
@@ -262,14 +440,17 @@
     <div class="section-block">
       <span class="section-label">Stay Updated</span>
       <div class="section-content">
-        <p style="text-align: center;">To be notified when the comic launches please sign up below.</p>
-        <div class="mailing-list">
-          <div style="text-align: center;" class="sender-form-field" data-sender-form-id="b2kp9W"></div>
-        </div>
+        <p style="text-align: center;">To be notified when the comic launches, please sign up below. Expect occasional emails from Zachary about new chapter releases, sneak previews on pages, and the occasional studio update. Unsubscribe anytime.</p>
       </div>
     </div>
 
-    <div class="divider">✧･ﾟ: *✧･ﾟ:*　　*:･ﾟ✧*:･ﾟ✧</div>
+    <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･:*</div>
+
+    <div class="mailing-list">
+      <div style="text-align: center;" class="sender-form-field" data-sender-form-id="b2kp9W"></div>
+    </div>
+
+    <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
     <div class="footer-block">
       <div class="footer-row">
@@ -282,7 +463,7 @@
       </div>
     </div>
 
-    <div class="header-flair" style="margin-top: 10px;">✦ ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙ ✦ ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙ ✦ ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙ ✦</div>
+    <div class="header-flair" style="margin-top: 10px;">· ✧ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ✧ ·</div>
 
   </div>
 
