@@ -14,32 +14,35 @@
   <!-- ========== OPEN GRAPH TAGS (link previews) ==========
        Controls how the site appears when shared on Instagram,
        Facebook, Discord, iMessage, Bluesky, LinkedIn, etc.
-       UPDATE the og:url if your final domain differs.
-       REPLACE og:image path once you have a preview image.
   -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thecrucibleborn.com/">
   <meta property="og:title" content="The Crucibleborn">
   <meta property="og:description" content="A fantasy adventure comic series by Zachary Hutchinson. Currently in development.">
-  <meta property="og:image" content="https://thecrucibleborn.com/images/og-preview.jpg">
-  <!-- og:image should be 1200 × 630 px for best results across platforms -->
 
-  <!-- ========== TWITTER / X CARD ========== -->
+  <!-- ========== IMPORTANT: PREVIEW IMAGE ==========
+       THIS IS TURNED OFF FOR NOW.
+       When you have your teaser image ready (suggested size: 1200 × 630 px):
+       1. Upload the image to your server (e.g., /images/og-preview.jpg)
+       2. Uncomment the lines below by removing the arrows and exclamation marks.
+  -->
+  <!--
+  <meta property="og:image" content="https://thecrucibleborn.com/images/og-preview.jpg">
+  <meta name="twitter:image" content="https://thecrucibleborn.com/images/og-preview.jpg">
+  -->
+  
+  <!-- Twitter card details -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Crucibleborn">
   <meta name="twitter:description" content="A fantasy adventure comic series by Zachary Hutchinson. Currently in development.">
-  <meta name="twitter:image" content="https://thecrucibleborn.com/images/og-preview.jpg">
 
   <!-- ========== FAVICON ==========
        The tiny icon that shows in browser tabs and bookmarks.
        Upload a favicon.ico (or favicon.png) to your site root.
-       Recommended: 32×32 or 48×48 px, square. Can be a simple
-       symbol (✦ sigil, single letter, etc.) — doesn't need to
-       be elaborate at that size.
+       Recommended: 32×32 or 48×48 px, square.
   -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <!-- apple-touch-icon: 180×180 px, used when someone saves site to iPhone home screen -->
 
   <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
   <style>
@@ -88,7 +91,8 @@
       font-size: 0.8em;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      animation: blink 1.2s step-start infinite;
+      /* Slowed down from 1.2s to 2.5s */
+      animation: blink 2.5s step-start infinite;
     }
 
     @keyframes blink {
@@ -109,6 +113,7 @@
       margin-bottom: 0;
     }
 
+    /* Updated to h2 for better SEO, styled to match previous span */
     .section-label {
       font-family: "Almendra Display", serif;
       font-size: 1.1em;
@@ -117,6 +122,7 @@
       padding: 6px 14px;
       display: block;
       text-align: center;
+      font-weight: normal; /* Reset h2 default bolding if font handles it */
     }
 
     .section-content {
@@ -226,8 +232,7 @@
     /* ============================================
        IMAGE PLACEHOLDER STYLES
        Replace these <div> placeholders with <img> tags
-       when artwork is ready. Each placeholder is labeled
-       with its intended content and suggested dimensions.
+       when artwork is ready.
        ============================================ */
 
     .img-placeholder {
@@ -264,12 +269,10 @@
       color: #555;
     }
 
-    /* Teaser image — large, wide */
     .ph-teaser {
       min-height: 260px;
     }
 
-    /* Faction sigils — 4 in a row */
     .faction-sigils {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -292,7 +295,6 @@
       font-size: 0.6em;
     }
 
-    /* Creator portrait — square-ish */
     .ph-creator {
       min-height: 200px;
       max-width: 220px;
@@ -314,7 +316,7 @@
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
     <div class="section-block">
-      <span class="section-label">The Story</span>
+      <h2 class="section-label">The Story</h2>
       <div class="section-content">
 
         <p style="font-style: italic; text-align: center; font-size: 0.95em; margin-bottom: 16px; padding: 0 4px;">In a world where people are strictly segregated by their special abilities, a sheltered sky-nun, forced to the ground for the first time in her life, must learn to walk across a hostile wasteland to save her hybrid infant from a military scientist determined to dissect it and a calculating exile determined to use it to rewrite history.</p>
@@ -374,7 +376,7 @@
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
     <div class="section-block">
-      <span class="section-label">Development Status</span>
+      <h2 class="section-label">Development Status</h2>
       <div class="section-content">
         <p>The comic is currently in development. The first volume of the story has been fully outlined. Volume one will be 18 chapters and roughly 250+ pages. Right now I am writing out dialogue and sketching out pages. The first chapter will be available in print by late May 2026. Sign up for the newsletter below for more info! </p>
       </div>
@@ -383,7 +385,7 @@
        <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
     <div class="section-block">
-      <span class="section-label">Where to Get It</span>
+      <h2 class="section-label">Where to Get It</h2>
       <div class="section-content">
         <p>When the first chapter releases in late May 2026, you'll find <em>The Crucibleborn</em> at these Chicago shops:</p>
         <ul class="socials-list">
@@ -399,7 +401,7 @@
        <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
     <div class="section-block">
-      <span class="section-label">The Creator</span>
+      <h2 class="section-label">The Creator</h2>
       <div class="section-content">
 
         <!-- ========== CREATOR PORTRAIT PLACEHOLDER ==========
@@ -412,9 +414,9 @@
         </div>
         <!-- ========== END CREATOR PORTRAIT ========== -->
 
-<p>Zachary Hutchinson (she/her, b. 1991, Grand Rapids, MI) is a Chicago-based artist and educator whose interdisciplinary practice spans video, sculpture, performance, and comics. She holds a BFA in Studio Art from the School of the Art Institute of Chicago and an MFA in Moving Image from the University of Illinois Chicago, and she currently teaches at both.</p>
+<p><strong>Zachary Hutchinson</strong> (she/her, b. 1991, Grand Rapids, MI) is a Chicago-based artist and educator whose interdisciplinary practice spans video, sculpture, performance, and comics. She holds a BFA in Studio Art from the School of the Art Institute of Chicago and an MFA in Moving Image from the University of Illinois Chicago, and she currently teaches at both.</p>
  
-<p>After years making work for galleries and theaters, she has returned to tell the stories that made her want to be an artist and to work in the medium that made her want to be an artist: comics! She is excited to share her first long-form narrative comic series, <em>The Crucibleborn</em>, which deals with themes that are important to her, such as chosen family, bodily autonomy, and the refusal of complicity. In this new work Hutchinson approaches comics as a space where mythic world-building and emotional intimacy can coexist, creating narratives that are both accessible and formally rigorous.</p>
+<p>After years making work for galleries and theaters, she has returned to tell the stories that made her want to be an artist and to work in the medium that made her want to be an artist: comics! She is excited to share her first long-form narrative comic series, <em>The Crucibleborn</em>, which deals with themes close to her heart, such as chosen family, bodily autonomy, and the refusal of complicity. In this new work Hutchinson approaches comics as a space where mythic world-building and emotional intimacy can coexist, creating narratives that are both accessible and formally rigorous.</p>
  
 <p>She lives in Chicago with her three cats, Mary, Nancy (aka Tutu), and Chacha. When not drawing, writing, or teaching, she can usually be found thrifting or sniffing perfume.</p>
  
@@ -424,7 +426,7 @@
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
     <div class="section-block">
-      <span class="section-label">Find Us & Contact</span>
+      <h2 class="section-label">Find Us & Contact</h2>
       <div class="section-content">
         <ul class="socials-list">
           <li><a href="https://www.instagram.com/TheCrucibleborn" target="_blank">Instagram &mdash; @TheCrucibleborn</a></li>
@@ -438,7 +440,7 @@
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
     <div class="section-block">
-      <span class="section-label">Stay Updated</span>
+      <h2 class="section-label">Stay Updated</h2>
       <div class="section-content">
         <p style="text-align: center;">To be notified when the comic launches, please sign up below. Expect occasional emails from Zachary about new chapter releases, sneak previews on pages, and the occasional studio update. Unsubscribe anytime.</p>
       </div>
