@@ -55,7 +55,6 @@
     .site-header {
       text-align: center;
       padding: 20px 0 16px 0;
-      border-bottom: 3px double #111111;
       margin-bottom: 6px;
     }
 
@@ -83,6 +82,16 @@
       50% { opacity: 0; }
     }
 
+    /* Respect users who prefer reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      .coming-soon {
+        animation: none;
+      }
+    }
+
     /* NAVIGATION BAR STYLES */
     .top-nav {
       display: flex;
@@ -92,7 +101,7 @@
       padding: 14px 5px;
       background-color: #111111;
       text-align: center;
-      border-bottom: 3px double #99FFFF;
+      border: 3px double #99FFFF;
       color: #ffffff;
       font-size: 0.95em;
       margin-bottom: 14px;
@@ -185,7 +194,7 @@
     }
 
     .footer-block {
-      border: 1px solid #111;
+      border: 3px double #111;
       margin-top: 0;
     }
 
@@ -419,8 +428,8 @@
       <h2 class="section-label">Find Us & Contact</h2>
       <div class="section-content">
         <ul class="socials-list">
-          <li><a href="https://www.instagram.com/TheCrucibleborn" target="_blank">Instagram &mdash; @TheCrucibleborn</a></li>
-          <li><a href="https://www.tiktok.com/@TheCrucibleborn" target="_blank">TikTok &mdash; @TheCrucibleborn</a></li>
+          <li><a href="https://www.instagram.com/TheCrucibleborn" target="_blank" rel="noopener noreferrer">Instagram &mdash; @TheCrucibleborn</a></li>
+          <li><a href="https://www.tiktok.com/@TheCrucibleborn" target="_blank" rel="noopener noreferrer">TikTok &mdash; @TheCrucibleborn</a></li>
         </ul>
         <hr class="contact-divider">
         <p>For all inquiries email Zachary at: <a href="mailto:TheCrucibleborn@gmail.com">TheCrucibleborn@gmail.com</a></p>
@@ -451,7 +460,7 @@
         <div class="footer-cell">Last updated: April 2026</div>
       </div>
       <div class="footer-row">
-        <div class="footer-cell-full">Best viewed in any browser &mdash; all resolutions welcome</div>
+        <div class="footer-cell-full">Best viewed on a computer rather than a phone, but the phone will be fine just stuff might look a lil wonky <br> ¯\_(ツ)_/¯</br> </div>
       </div>
     </div>
 
