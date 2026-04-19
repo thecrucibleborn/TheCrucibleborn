@@ -26,6 +26,11 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
   <style>
+    /* Enables the smooth "zoom" scrolling effect */
+    html {
+      scroll-behavior: smooth;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -76,6 +81,38 @@
 
     @keyframes blink {
       50% { opacity: 0; }
+    }
+
+    /* NAVIGATION BAR STYLES */
+    .top-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 5px; /* Increased vertical padding slightly */
+      background-color: #111111;
+      text-align: center;
+      /* Cyan border for visibility */
+      border-bottom: 3px double #99FFFF;
+      color: #ffffff;
+      font-size: 0.95em;
+      margin-bottom: 14px; /* FIXED: Increased space below the nav bar */
+    }
+
+    .top-nav a {
+      font-family: "Almendra Display", serif;
+      color: #ffffff; /* White text */
+      background-color: transparent;
+      text-decoration: none;
+      padding: 2px 6px;
+      border: 1px solid transparent;
+    }
+
+    .top-nav a:hover {
+      color: #99FFFF;
+      background-color: #333;
+      border: 1px solid #99FFFF;
+      text-decoration: none;
     }
 
     .divider {
@@ -265,7 +302,7 @@
       width: 250px;
       height: 250px;
       float: right;
-      margin: 0 0 10px 14px; /* Bottom and left margins create the text gutter */
+      margin: 0 0 10px 14px;
     }
   </style>
 </head>
@@ -280,9 +317,20 @@
       <p class="coming-soon">✦ ·͙*̩̩̥͙˚̩̥̩̥✦ Comic currently in development ✦˚̩̥̩̥*̩̩̥͙·͙ ✦</p>
     </div>
 
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="top-nav">
+      ✦ <a href="#story">Story</a> ✦
+      <a href="#status">Development</a> ✦
+      <a href="#buy">Where to Buy</a> ✦
+      <a href="#creator">Creator</a> ✦
+      <a href="#contact">Contact</a> ✦
+      <a href="#newsletter">Newsletter</a> ✦
+    </nav>
+    <!-- ========== END NAVIGATION BAR ========== -->
+
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
-    <div class="section-block">
+    <div id="story" class="section-block">
       <h2 class="section-label">The Story</h2>
       <div class="section-content">
 
@@ -321,7 +369,7 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
-    <div class="section-block">
+    <div id="status" class="section-block">
       <h2 class="section-label">Development Status</h2>
       <div class="section-content">
         <p>The comic is currently in development. The first volume of the story has been fully outlined. Volume one will be 18 chapters and roughly 250+ pages. Right now I am writing out dialogue and sketching out pages. The first chapter will be available in print by late May 2026. Sign up for the newsletter below for more info! </p>
@@ -330,7 +378,7 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
-    <div class="section-block">
+    <div id="buy" class="section-block">
       <h2 class="section-label">Where to Get It</h2>
       <div class="section-content">
         <p>When the first chapter releases in late May 2026, you'll find <em>The Crucibleborn</em> at these Chicago shops:</p>
@@ -340,15 +388,15 @@
           <li>Want to sell <em>The Crucibleborn</em> in your brick & mortar store? Email me at <a href="mailto:TheCrucibleborn@gmail.com">TheCrucibleborn@gmail.com</a> and I'll cut you a good deal!</li>
         </ul>
         <p>For customers, issues are <strong>$10 each</strong>, printed by hand in small runs. Limited edition variants of each chapter will also be available.</p>
-        <p><em>Outside Chicago?</em></p>
-          <p>Shipping is limited so email <a href="mailto:TheCrucibleborn@gmail.com">TheCrucibleborn@gmail.com</a> to ask.</p>
+        <p><em>Outside Chicago?</em><br>
+          Shipping is limited so email <a href="mailto:TheCrucibleborn@gmail.com">TheCrucibleborn@gmail.com</a> to ask.</p>
         <p>For the quickest updates, follow along on <a href="https://www.instagram.com/TheCrucibleborn" target="_blank" rel="noopener noreferrer">Instagram</a>. To be notified when each chapter releases, sign up for the mailing list below.</p>
       </div>
     </div>
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
-    <div class="section-block">
+    <div id="creator" class="section-block">
       <h2 class="section-label">The Creator</h2>
       <div class="section-content">
 
@@ -367,7 +415,7 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
-    <div class="section-block">
+    <div id="contact" class="section-block">
       <h2 class="section-label">Find Us & Contact</h2>
       <div class="section-content">
         <ul class="socials-list">
@@ -381,7 +429,7 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
-    <div class="section-block">
+    <div id="newsletter" class="section-block">
       <h2 class="section-label">Stay Updated</h2>
       <div class="section-content">
         <p>To be notified when the comic launches, please sign up below. Expect occasional emails from Zachary about new chapter releases, sneak previews on pages, and the occasional studio update. Unsubscribe anytime.</p>
