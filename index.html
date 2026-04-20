@@ -26,7 +26,6 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
   <style>
-    /* Enables the smooth "zoom" scrolling effect */
     html {
       scroll-behavior: smooth;
     }
@@ -50,6 +49,35 @@
       padding: 20px;
       border: 3px double #111111;
       background-color: #99FFFF;
+    }
+
+    /* SOCIAL ICON BAR */
+    .social-icon-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      padding: 8px 0 4px 0;
+      margin-bottom: 2px;
+    }
+
+    .social-icon-bar a {
+      display: inline-block;
+      background: none;
+      border: none;
+      padding: 0;
+      line-height: 0;
+    }
+
+    .social-icon-bar a:hover {
+      background: none;
+      opacity: 0.7;
+    }
+
+    .social-icon-bar img {
+      width: 20px;
+      height: 20px;
+      display: block;
     }
 
     .site-header {
@@ -82,17 +110,11 @@
       50% { opacity: 0; }
     }
 
-    /* Respect users who prefer reduced motion */
     @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-      .coming-soon {
-        animation: none;
-      }
+      html { scroll-behavior: auto; }
+      .coming-soon { animation: none; }
     }
 
-    /* NAVIGATION BAR STYLES */
     .top-nav {
       display: flex;
       flex-wrap: wrap;
@@ -290,7 +312,6 @@
       min-height: 260px;
     }
 
-    /* Sigil Styles */
     .faction-sigils {
       display: flex;
       flex-wrap: wrap;
@@ -305,18 +326,33 @@
       display: block;
     }
 
-    /* Creator Photo Styles - Float Right */
     .creator-photo {
       width: 250px;
       height: 250px;
       float: right;
       margin: 0 0 10px 14px;
-      border: 3px double #111111; /* DOUBLE LINE BORDER ADDED HERE */
+      border: 3px double #111111;
     }
   </style>
 </head>
 <body>
   <div class="container">
+
+    <!-- SOCIAL ICON BAR -->
+    <div class="social-icon-bar">
+      <a href="https://www.instagram.com/TheCrucibleborn" target="_blank" rel="noopener noreferrer" title="Instagram">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@TheCrucibleborn" target="_blank" rel="noopener noreferrer" title="TikTok">
+        <img src="images/tiktok.png" alt="TikTok">
+      </a>
+      <a href="https://x.com/TheCrucibleborn" target="_blank" rel="noopener noreferrer" title="X / Twitter">
+        <img src="images/x.png" alt="X">
+      </a>
+      <a href="https://www.youtube.com/@TheCrucibleborn" target="_blank" rel="noopener noreferrer" title="YouTube">
+        <img src="images/youtube.png" alt="YouTube">
+      </a>
+    </div>
 
     <div class="header-flair">· ✧ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ✧ ·</div>
 
@@ -326,7 +362,7 @@
       <p class="coming-soon">✦ ·͙*̩̩̥͙˚̩̥̩̥✦ Comic currently in development ✦˚̩̥̩̥*̩̩̥͙·͙ ✦</p>
     </div>
 
-    <!-- ========== NAVIGATION BAR ========== -->
+    <!-- NAVIGATION BAR -->
     <nav class="top-nav">
       ✦ <a href="#story">Story</a> ✦
       <a href="#status">Development</a> ✦
@@ -335,7 +371,6 @@
       <a href="#contact">Contact</a> ✦
       <a href="#newsletter">Newsletter</a> ✦
     </nav>
-    <!-- ========== END NAVIGATION BAR ========== -->
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
@@ -347,7 +382,7 @@
 
         <div class="img-placeholder ph-teaser">
           <div class="ph-label">[ PLACE HOLDER FOR TEASER IMAGE ]</div>
-          <div class="ph-desc"> Some Key art or hero illustration</div>
+          <div class="ph-desc">Some Key art or hero illustration</div>
           <div class="ph-dims">Suggested: ~600 × 400 px (landscape) or wider</div>
         </div>
 
@@ -381,7 +416,7 @@
     <div id="status" class="section-block">
       <h2 class="section-label">Development Status</h2>
       <div class="section-content">
-        <p>The comic is currently in development. The first volume of the story has been fully outlined. Volume one will be 18 chapters and roughly 250+ pages. Right now I am writing out dialogue and sketching out pages. The first chapter will be available in print by late May 2026. Sign up for the newsletter below for more info! </p>
+        <p>The comic is currently in development. The first volume of the story has been fully outlined. Volume one will be 18 chapters and roughly 250+ pages. Right now I am writing out dialogue and sketching out pages. The first chapter will be available in print by late May 2026. Sign up for the newsletter below for more info!</p>
       </div>
     </div>
 
@@ -394,7 +429,7 @@
         <ul class="socials-list">
           <li><a href="https://www.quimbys.com/" target="_blank" rel="noopener noreferrer">Quimby's Bookstore</a> &mdash; Wicker Park, Chicago</li>
           <li><a href="https://www.grahamcrackers.com/store/chicago-loop" target="_blank" rel="noopener noreferrer">Graham Crackers Comics</a> &mdash; Loop, Chicago</li>
-          <li>Want to sell <em>The Crucibleborn</em> in your brick & mortar store? Email me at <a href="mailto:TheCrucibleborn@gmail.com">TheCrucibleborn@gmail.com</a> and I'll cut you a good deal!</li>
+          <li>Want to sell <em>The Crucibleborn</em> in your brick &amp; mortar store? Email me at <a href="mailto:TheCrucibleborn@gmail.com">TheCrucibleborn@gmail.com</a> and I'll cut you a good deal!</li>
         </ul>
         <p>For customers, issues are <strong>$10 each</strong>, printed by hand in small runs. Limited edition variants of each chapter will also be available.</p>
         <p><em>Outside Chicago?</em><br>
@@ -405,8 +440,6 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
- <!-- ========== CREATOR ========== -->
-    
     <div id="creator" class="section-block">
       <h2 class="section-label">The Creator</h2>
       <div class="section-content">
@@ -414,27 +447,25 @@
         <img src="images/zacharyhutchinson.png" alt="Zachary Hutchinson" class="creator-photo">
 
         <p><strong>Zachary Hutchinson</strong> (she/her, b. 1991, Wyoming City, MI) is a Chicago-based artist and educator whose interdisciplinary practice spans video, sculpture, performance, and comics. She holds a BFA in Studio Art from the School of the Art Institute of Chicago and an MFA in Moving Image from the University of Illinois Chicago, and she currently teaches at both.</p>
- 
+
         <p>After years making work for galleries and theaters, she has returned to tell the stories that made her want to be an artist and to work in the medium that made her want to be an artist: comics! She is excited to share her first long-form narrative comic series, <em>The Crucibleborn</em>, which deals with themes close to her heart, such as chosen family, bodily autonomy, and the refusal of complicity. In this new work Hutchinson approaches comics as a space where mythic world-building and emotional intimacy can coexist, creating narratives that are both accessible and formally rigorous.</p>
- 
+
         <p>She lives in Chicago with her three cats, Mary, Nancy (aka Tutu), and Chacha. When not drawing, writing, or teaching, she can usually be found thrifting or sniffing perfume.</p>
- 
-        <p> <a href="https://www.zacharyhutchinson.com" target="_blank" rel="noopener noreferrer">Website &mdash; www.ZacharyHutchinson.com</a> ✧ ✦ ✧ <a href="https://www.instagram.com/zacharyhutchinson/" target="_blank" rel="noopener noreferrer">Instagram &mdash; @ZacharyHutchinson</a></p>
+
+        <p><a href="https://www.zacharyhutchinson.com" target="_blank" rel="noopener noreferrer">Website &mdash; www.ZacharyHutchinson.com</a> ✧ ✦ ✧ <a href="https://www.instagram.com/zacharyhutchinson/" target="_blank" rel="noopener noreferrer">Instagram &mdash; @ZacharyHutchinson</a></p>
       </div>
     </div>
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
- <!-- ========== CONTACT ========== -->
-    
     <div id="contact" class="section-block">
       <h2 class="section-label">Find Us & Contact</h2>
       <div class="section-content">
         <ul class="socials-list">
           <li><a href="https://www.instagram.com/TheCrucibleborn" target="_blank" rel="noopener noreferrer">Instagram &mdash; @TheCrucibleborn</a></li>
           <li><a href="https://www.tiktok.com/@TheCrucibleborn" target="_blank" rel="noopener noreferrer">TikTok &mdash; @TheCrucibleborn</a></li>
-           <li><a href="https://x.com/TheCrucibleborn" target="_blank" rel="noopener noreferrer">Twitter (X) &mdash; @TheCrucibleborn</a></li>
-          <li><a href="www.youtube.com/@TheCrucibleborn" target="_blank" rel="noopener noreferrer">Youtube &mdash; @TheCrucibleborn</a></li>
+          <li><a href="https://x.com/TheCrucibleborn" target="_blank" rel="noopener noreferrer">Twitter (X) &mdash; @TheCrucibleborn</a></li>
+          <li><a href="https://www.youtube.com/@TheCrucibleborn" target="_blank" rel="noopener noreferrer">Youtube &mdash; @TheCrucibleborn</a></li>
         </ul>
         <hr class="contact-divider">
         <p>For all inquiries email Zachary at: <a href="mailto:TheCrucibleborn@gmail.com">TheCrucibleborn@gmail.com</a></p>
@@ -465,11 +496,27 @@
         <div class="footer-cell">Last updated: April 2026</div>
       </div>
       <div class="footer-row">
-        <div class="footer-cell-full">Best viewed on a computer rather than a phone, <br>but the phone will be fine just stuff might look a lil wonky</br> <br> ¯\_(ツ)_/¯</br> </div>
+        <div class="footer-cell-full">Best viewed on a computer rather than a phone, <br>but the phone will be fine just stuff might look a lil wonky<br> ¯\_(ツ)_/¯</div>
       </div>
     </div>
 
-    <div class="header-flair" style="margin-top: 10px;">· ✧ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ✧ ·</div>
+    <!-- SOCIAL ICON BAR (BOTTOM) -->
+    <div class="social-icon-bar" style="margin-top: 10px;">
+      <a href="https://www.instagram.com/TheCrucibleborn" target="_blank" rel="noopener noreferrer" title="Instagram">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@TheCrucibleborn" target="_blank" rel="noopener noreferrer" title="TikTok">
+        <img src="images/Tiktok.png" alt="TikTok">
+      </a>
+      <a href="https://x.com/TheCrucibleborn" target="_blank" rel="noopener noreferrer" title="X / Twitter">
+        <img src="images/x.png" alt="X">
+      </a>
+      <a href="https://www.youtube.com/@TheCrucibleborn" target="_blank" rel="noopener noreferrer" title="YouTube">
+        <img src="images/youtube.png" alt="YouTube">
+      </a>
+    </div>
+
+    <div class="header-flair" style="margin-top: 4px;">· ✧ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ✧ ·</div>
 
   </div>
 
