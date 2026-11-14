@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Crucibleborn | Fantasy Comic Series by Zachary Hutchinson</title>
 
+  <!-- ╔════════════════════════════════════════════════════════════════════════
+       ║
+       ║   ✧ ✦ ✧   H E A D   /   S E O   ✧ ✦ ✧
+       ║
+       ║   Edit the <title> above, the description below, and the og:/twitter: text.
+       ║   The release date lives in the description. Keep it matching the Development section.
+       ║
+       ╚════════════════════════════════════════════════════════════════════════ -->
   <meta name="description" content="The Crucibleborn: a fantasy adventure comic series by Zachary Hutchinson. Currently in development. The first issue will be in print in early 2027.">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thecrucibleborn.com/">
-  <!-- TODO: og-image.png does not exist yet. Make a 1200 x 630 px key art crop and drop it in /images. Until it exists, link previews simply show no image. -->
   <meta property="og:image" content="https://thecrucibleborn.com/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -34,6 +41,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
+  <!-- ╔════════════════════════════════════════════════════════════════════════
+       ║
+       ║   ✧ ✦ ✧   H E A D   /   S T R U C T U R E D   D A T A   ✧ ✦ ✧
+       ║
+       ║   Series name, genre, social links, author. Rarely needs changing.
+       ║
+       ╚════════════════════════════════════════════════════════════════════════ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,6 +72,14 @@
   }
   </script>
 
+  <!-- ╔════════════════════════════════════════════════════════════════════════
+       ║
+       ║   ✧ ✦ ✧   S T Y L E S   ✧ ✦ ✧
+       ║
+       ║   Site color is #99FFFF (cyan) and #111111 (ink). Title font is Almendra Display.
+       ║   You probably don't need to touch anything in here for text updates.
+       ║
+       ╚════════════════════════════════════════════════════════════════════════ -->
   <style>
     html {
       scroll-behavior: smooth;
@@ -404,10 +426,25 @@
       text-align: center;
     }
 
-    .comic-preview a {
+    .comic-preview a,
+    .art-link {
       background: none;
       display: inline-block;
       line-height: 0;
+    }
+
+    .art-link {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    .art-link:hover {
+      background: none;
+    }
+
+    .art-link .comic-art {
+      margin: 14px auto;
     }
 
     .comic-preview img {
@@ -447,7 +484,13 @@
 <body>
   <div class="container">
 
-    <!-- SOCIAL ICON BAR TOP -->
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   S O C I A L   I C O N   B A R   ( T O P )   ✧ ✦ ✧
+         ║
+         ║   Links to Instagram / TikTok / X / YouTube. Same set repeats at the bottom of the page.
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div class="icon-bar-wrap">
       <table class="social-icon-table">
         <tr>
@@ -477,6 +520,14 @@
 
     <div class="header-flair">· ✧ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ·͙*͙̩̩͙˚̩̥̥̩*͙̩̩͙·͙ ✦ ✧ ·</div>
 
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   H E A D E R   ✧ ✦ ✧
+         ║
+         ║   Logo is images/logo.png and falls back to text if the file is missing.
+         ║   The long italic paragraph is the logline.
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div class="site-header">
       <h1>
         <img src="images/logo.png" alt="The Crucibleborn" class="site-logo" width="1200" height="337"
@@ -487,7 +538,13 @@
       <p class="header-logline">Presumed dead by her convent, Sister Aim (a sky nun who has never touched the ground) is sent into the ancient Cruciblehold City ruins to dispose of her newborn, a child condemned by the Reverend Mother for its blasphemous and unheard of abilities. But right as she prepares to leave the infant to its demise, it is rescued by two outcast kids from a separatist faction with the power to control life and death itself. Torn between her vows and a sudden, reluctant instinct to protect the child, Sister Aim abandons her Order forever. The four quickly form a found family, bound by choice as much as necessity and flee into the Great Wastes for a safe place to live as themselves, but survival in the Wastes is brutal. They aren't just being hunted by a rival faction that commands weather and water, intent on dissecting and weaponizing the baby, but are also being tracked by an underground rebel with ties to the child's existence that no one thought possible.</p>
     </div>
 
-    <!-- NAVIGATION BAR -->
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   N A V   B A R   ✧ ✦ ✧
+         ║
+         ║   Each link points to a section id below (#story, #status, #buy, #creator, #contact, #newsletter).
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <nav class="top-nav">
       ✦ <a href="#story">Story</a> ✦
       <a href="#status">Development</a> ✦
@@ -499,11 +556,21 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   T H E   S T O R Y   ✧ ✦ ✧
+         ║
+         ║   Key art (images/keyart.png), faction blurbs, faction sigils, synopsis, Issue 1 preview.
+         ║   Key art is clickable and opens full size in a new tab.
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div id="story" class="section-block">
       <h2 class="section-label">The Story</h2>
       <div class="section-content">
 
-        <img src="images/heroimage.png" alt="Key art from The Crucibleborn" class="comic-art">
+        <a href="images/keyart-large.jpg" target="_blank" rel="noopener noreferrer" class="art-link" title="View full size">
+          <img src="images/keyart.png" alt="Key art from The Crucibleborn: Sister Aim falling through the sky above the Cruciblehold ruins" class="comic-art" width="1200" height="752">
+        </a>
 
         <p>The world is divided by blood and ability.</p>
 
@@ -539,6 +606,15 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   D E V E L O P M E N T   S T A T U S   ✧ ✦ ✧
+         ║
+         ║   ★★★  RELEASE DATE AND PROGRESS UPDATE LIVE HERE  ★★★
+         ║
+         ║   Also the work-in-progress image (images/wipshot.png).
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div id="status" class="section-block">
       <h2 class="section-label">Development Status</h2>
       <div class="section-content">
@@ -550,6 +626,15 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   W H E R E   T O   G E T   I T   ✧ ✦ ✧
+         ║
+         ║   ★★★  SHOP LIST, PRICE, AND RELEASE DATE LIVE HERE  ★★★
+         ║
+         ║   Each shop is one <li> line. Copy a line to add a shop, delete a line to remove one.
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div id="buy" class="section-block">
       <h2 class="section-label">Where to Get It</h2>
       <div class="section-content">
@@ -577,6 +662,13 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   T H E   C R E A T O R   ✧ ✦ ✧
+         ║
+         ║   Bio and photo (images/zacharyhutchinson.jpg). Cats are listed here too.
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div id="creator" class="section-block">
       <h2 class="section-label">The Creator</h2>
       <div class="section-content">
@@ -595,6 +687,13 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   F I N D   U S   &   C O N T A C T   ✧ ✦ ✧
+         ║
+         ║   Social handles and the contact email.
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div id="contact" class="section-block">
       <h2 class="section-label">Find Us & Contact</h2>
       <div class="section-content">
@@ -611,6 +710,13 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･: * :･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   S T A Y   U P D A T E D   ( N E W S L E T T E R   B L U R B )   ✧ ✦ ✧
+         ║
+         ║   The text only. The actual signup form is the Sender embed just below.
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div id="newsletter" class="section-block">
       <h2 class="section-label">Stay Updated</h2>
       <div class="section-content">
@@ -620,12 +726,26 @@
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   N E W S L E T T E R   F O R M   ✧ ✦ ✧
+         ║
+         ║   Don't edit the data-sender-form-id unless you make a new form in Sender.
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div class="mailing-list">
       <div style="text-align: center;" class="sender-form-field" data-sender-form-id="b2kp9W"></div>
     </div>
 
     <div class="divider">*:･ﾟ✧ ✦ ✧ﾟ･:*</div>
 
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   F O O T E R   ✧ ✦ ✧
+         ║
+         ║   'Last updated' auto-fills from the file's modified date; the text here is just the fallback.
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div class="footer-block">
       <div class="footer-row">
         <div class="footer-cell">&copy; 2026 Zachary Hutchinson</div>
@@ -637,7 +757,11 @@
       </div>
     </div>
 
-    <!-- SOCIAL ICON BAR BOTTOM -->
+    <!-- ╔════════════════════════════════════════════════════════════════════════
+         ║
+         ║   ✧ ✦ ✧   S O C I A L   I C O N   B A R   ( B O T T O M )   ✧ ✦ ✧
+         ║
+         ╚════════════════════════════════════════════════════════════════════════ -->
     <div class="icon-bar-wrap" style="margin-top: 8px;">
       <table class="social-icon-table">
         <tr>
@@ -669,6 +793,13 @@
 
   </div>
 
+  <!-- ╔════════════════════════════════════════════════════════════════════════
+       ║
+       ║   ✧ ✦ ✧   S C R I P T S   ✧ ✦ ✧
+       ║
+       ║   Nothing to edit here for content changes.
+       ║
+       ╚════════════════════════════════════════════════════════════════════════ -->
   <script>
     (function () {
       var el = document.getElementById('last-updated');
