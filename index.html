@@ -3,30 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Crucibleborn | Fantasy Comic Series by Zachary Hutchinson</title>
+  <title>The Crucibleborn | Indie Fantasy Comic by Zachary Hutchinson</title>
 
   <!-- ╔════════════════════════════════════════════════════════════════════════
        ║
        ║   ✧ ✦ ✧   H E A D   /   S E O   ✧ ✦ ✧
        ║
        ║   Edit the <title> above, the description below, and the og:/twitter: text.
-       ║   The release date lives in the description. Keep it matching the Development section.
+       ║   The release date lives in the description AND the og/twitter descriptions.
+       ║   Keep all three matching the Development section.
+       ║   og-image.png is the picture that shows when the link is shared (1200 x 630).
        ║
        ╚════════════════════════════════════════════════════════════════════════ -->
-  <meta name="description" content="The Crucibleborn: a fantasy adventure comic series by Zachary Hutchinson. Currently in development. The first issue will be in print in early 2027.">
+  <meta name="description" content="The Crucibleborn is an indie fantasy comic by Chicago artist Zachary Hutchinson. A sky nun defies her Order to protect a child who shouldn't exist. Issue 1: early 2027.">
+  <meta name="author" content="Zachary Hutchinson">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Crucibleborn">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://thecrucibleborn.com/">
+  <meta property="og:title" content="The Crucibleborn">
+  <meta property="og:description" content="An indie fantasy comic by Zachary Hutchinson. A sky nun defies her Order to protect a child who shouldn't exist. Issue 1 in print early 2027.">
   <meta property="og:image" content="https://thecrucibleborn.com/images/og-image.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:title" content="The Crucibleborn">
-  <meta property="og:description" content="A fantasy adventure comic series by Zachary Hutchinson. Currently in development.">
+  <meta property="og:image:alt" content="Key art from The Crucibleborn: Sister Aim falls through a clouded sky above the ruins of Cruciblehold City">
 
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@TheCrucibleborn">
+  <meta name="twitter:creator" content="@TheCrucibleborn">
   <meta name="twitter:title" content="The Crucibleborn">
-  <meta name="twitter:description" content="A fantasy adventure comic series by Zachary Hutchinson. Currently in development.">
+  <meta name="twitter:description" content="An indie fantasy comic by Zachary Hutchinson. A sky nun defies her Order to protect a child who shouldn't exist. Issue 1 in print early 2027.">
   <meta name="twitter:image" content="https://thecrucibleborn.com/images/og-image.png">
+  <meta name="twitter:image:alt" content="Key art from The Crucibleborn: Sister Aim falls through a clouded sky above the ruins of Cruciblehold City">
 
   <meta name="google-site-verification" content="KxOCJw4RTBuoxhD9f3FEBDft_CDM3FgttYQ-ON-_RP8" />
 
@@ -51,24 +62,47 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ComicSeries",
-    "name": "The Crucibleborn",
-    "url": "https://thecrucibleborn.com/",
-    "genre": "Fantasy adventure",
-    "inLanguage": "en",
-    "description": "A fantasy adventure comic series by Zachary Hutchinson. Volume One runs 18 issues.",
-    "sameAs": [
-      "https://www.instagram.com/TheCrucibleborn",
-      "https://www.tiktok.com/@TheCrucibleborn",
-      "https://x.com/TheCrucibleborn",
-      "https://www.youtube.com/@TheCrucibleborn"
-    ],
-    "author": {
-      "@type": "Person",
-      "name": "Zachary Hutchinson",
-      "url": "https://www.zacharyhutchinson.com",
-      "sameAs": "https://www.instagram.com/zacharyhutchinson/"
-    }
+    "@graph": [
+      {
+        "@type": "ComicSeries",
+        "@id": "https://thecrucibleborn.com/#series",
+        "name": "The Crucibleborn",
+        "url": "https://thecrucibleborn.com/",
+        "image": "https://thecrucibleborn.com/images/og-image.png",
+        "genre": ["Fantasy", "Adventure"],
+        "inLanguage": "en",
+        "description": "An indie fantasy adventure comic series by Zachary Hutchinson. Volume One runs 18 issues. Issue 1 in print early 2027.",
+        "keywords": "indie comic, fantasy comic, graphic novel, Chicago comics, self-published comic, found family",
+        "sameAs": [
+          "https://www.instagram.com/TheCrucibleborn",
+          "https://www.tiktok.com/@TheCrucibleborn",
+          "https://x.com/TheCrucibleborn",
+          "https://www.youtube.com/@TheCrucibleborn"
+        ],
+        "author": { "@id": "https://thecrucibleborn.com/#author" },
+        "publisher": { "@id": "https://thecrucibleborn.com/#author" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://thecrucibleborn.com/#author",
+        "name": "Zachary Hutchinson",
+        "url": "https://www.zacharyhutchinson.com",
+        "jobTitle": "Artist and educator",
+        "address": { "@type": "PostalAddress", "addressLocality": "Chicago", "addressRegion": "IL" },
+        "sameAs": [
+          "https://www.zacharyhutchinson.com",
+          "https://www.instagram.com/zacharyhutchinson/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://thecrucibleborn.com/#website",
+        "url": "https://thecrucibleborn.com/",
+        "name": "The Crucibleborn",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://thecrucibleborn.com/#author" }
+      }
+    ]
   }
   </script>
 
@@ -426,25 +460,27 @@
       text-align: center;
     }
 
-    .comic-preview a,
-    .art-link {
+    .comic-preview a {
       background: none;
       display: inline-block;
       line-height: 0;
     }
 
-    .art-link {
+    /* Full-bleed key art: sits between the section label and the text,
+       no border, no padding, cyan shows through the transparent PNG. */
+    .bleed-art,
+    .bleed-art:visited,
+    .bleed-art:hover {
       display: block;
-      width: fit-content;
-      margin: 0 auto;
-    }
-
-    .art-link:hover {
       background: none;
+      line-height: 0;
+      /* want a hairline between the art and the text? add:  border-bottom: 1px solid #111111; */
     }
 
-    .art-link .comic-art {
-      margin: 14px auto;
+    .bleed-art img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     .comic-preview img {
@@ -530,7 +566,7 @@
          ╚════════════════════════════════════════════════════════════════════════ -->
     <div class="site-header">
       <h1>
-        <img src="images/logo.png" alt="The Crucibleborn" class="site-logo" width="1200" height="337"
+        <img src="images/logo.png" alt="The Crucibleborn" class="site-logo" width="1200" height="337" fetchpriority="high"
              onerror="this.replaceWith(document.createTextNode('The Crucibleborn'))">
       </h1>
       <p class="subtitle">A fantasy adventure comic series by Zachary Hutchinson</p>
@@ -560,17 +596,19 @@
          ║
          ║   ✧ ✦ ✧   T H E   S T O R Y   ✧ ✦ ✧
          ║
-         ║   Key art (images/keyart.png), faction blurbs, faction sigils, synopsis, Issue 1 preview.
-         ║   Key art is clickable and opens full size in a new tab.
+         ║   Key art (images/keyart.png) runs edge to edge under the label, then the synopsis,
+         ║   faction blurbs, faction sigils, and the Issue 1 preview.
+         ║   Key art is clickable and opens images/keyart-large.png in a new tab.
          ║
          ╚════════════════════════════════════════════════════════════════════════ -->
     <div id="story" class="section-block">
       <h2 class="section-label">The Story</h2>
-      <div class="section-content">
 
-        <a href="images/keyart-large.jpg" target="_blank" rel="noopener noreferrer" class="art-link" title="View full size">
-          <img src="images/keyart.png" alt="Key art from The Crucibleborn: Sister Aim falling through the sky above the Cruciblehold ruins" class="comic-art" width="1200" height="752">
-        </a>
+      <a href="images/keyart-large.png" target="_blank" rel="noopener noreferrer" class="bleed-art" title="View full size">
+        <img src="images/keyart.png" alt="Key art from The Crucibleborn: Sister Aim, a sky nun, falls through a clouded sky above the ruins of Cruciblehold City" width="1200" height="858" decoding="async">
+      </a>
+
+      <div class="section-content">
 
         <p>The world is divided by blood and ability.</p>
 
